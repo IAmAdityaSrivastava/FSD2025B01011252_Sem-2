@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Management System</title>
+    <link rel="stylesheet" href="assessmentOne.css">
+</head>
+<body>
+    <h1>Student Marks Management System</h1>
+    <div class="container">
+        <div class="form">
+            <input type="text" id="name" placeholder="Student Name">
+            <input type="text" id="roll" placeholder="Roll Number">
+            <input type="number" id="math" placeholder="Math Marks">
+            <input type="number" id="science" placeholder="Science Marks">
+            <input type="number" id="english" placeholder="English Marks">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+        <div class="buttons">
+            <button onclick="displayStudents()">Display</button>
+            <button onclick="calculateTotals()">Total</button>
+            <button onclick="calculateAverage()">Average</button>
+            <button onclick="showTopStudents()">Average Above 80</button>
+            <button onclick="showFailedStudents()">Average Below 40 (Failed)</button>
+            <button onclick="countStudents()">Student Count</button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="assessmentOne.js"></script>
+</body>
+</html>
